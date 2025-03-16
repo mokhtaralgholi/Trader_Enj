@@ -14,6 +14,13 @@ namespace trader_app.PL.AC
 {
     public partial class frm_Account_request : PL.add_form
     {
+        Button btn_seve = new Button();
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_edit = new Button();
+
 
         process_Class proc = new process_Class();
         Account_Class Account = new Account_Class();

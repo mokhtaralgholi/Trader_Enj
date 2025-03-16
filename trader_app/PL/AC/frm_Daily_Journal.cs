@@ -12,6 +12,8 @@ namespace trader_app.PL.AC
 {
     public partial class frm_daily_journal : PL.order_frm
     {
+        //TextBox txt_in_date = new TextBox();
+
         public frm_daily_journal()
         {
             InitializeComponent();

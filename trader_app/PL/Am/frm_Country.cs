@@ -12,6 +12,22 @@ namespace trader_app.PL.Am
 {
     public partial class frm_Country : add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_repeal = new Button();
+        Button btn_dele = new Button();
+        Button btn_exit = new Button();
+        Button btn_ifect_account = new Button();
+
+
         BL.AM_Country_Class Countrys = new BL.AM_Country_Class();
         BL.AM_Currency_Class Currency = new BL.AM_Currency_Class();
         DAL.Databas_Class DB = new DAL.Databas_Class();

@@ -12,6 +12,21 @@ namespace trader_app.PL.Am
 {
     public partial class Frm_Campny : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_repeal = new Button();
+        Button btn_dele = new Button();
+        Button btn_exit = new Button();
+        Button btn_ifect_account = new Button();
+
+
         BL.process_Class pro = new BL.process_Class();
         BL.AM_Company_Class company = new BL.AM_Company_Class();
         DataTable dt;

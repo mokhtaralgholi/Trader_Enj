@@ -12,6 +12,15 @@ namespace trader_app.PL.INV
 {
     public partial class frm_INV_Mov_order : order_frm
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+
         DAL.DataAccessLayer dal; 
         BL.process_Class proc = new BL.process_Class();
         DAL.Databas_Class DB = new DAL.Databas_Class();
@@ -22,6 +31,8 @@ namespace trader_app.PL.INV
         DataRow to_inv;
         
         string type_id,F_Name;
+        private string Statu;
+
         public frm_INV_Mov_order()
         {
             type_id = "1";

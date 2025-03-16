@@ -8,13 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
+//using System.Data;
 
 
 namespace trader_app.PL.Am
 {
     public partial class frm_Managements :add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_view = new Button();
+
         DAL.DataAccessLayer dal ;
         DataTable dt;
         BL.process_Class proc = new BL.process_Class();

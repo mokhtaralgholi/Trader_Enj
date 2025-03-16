@@ -12,6 +12,15 @@ namespace trader_app.PL.Am
 {
     public partial class frm_Governorates : PL.add_form
     {
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_view = new Button();
+
         DAL.Databas_Class DB= new DAL.Databas_Class();
         BL.process_Class proc =new BL.process_Class();
         BL.AM_Governorate_Class Govetnorate = new BL.AM_Governorate_Class();

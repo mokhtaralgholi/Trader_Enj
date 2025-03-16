@@ -7,6 +7,14 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox_Data;
+        private System.Windows.Forms.Button btn_serch;
+        private System.Windows.Forms.Button btn_view;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_seve;
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>

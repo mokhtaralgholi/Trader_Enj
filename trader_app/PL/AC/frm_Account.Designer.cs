@@ -1,11 +1,59 @@
-﻿namespace trader_app.PL.AC
+﻿using System.Windows.Forms;
+
+namespace trader_app.PL.AC
 {
-    partial class frm_Account
+    partial class frm_Account : PL.add_form
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        // Added missing control declarations:
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox_Data;
+        private System.Windows.Forms.Button btn_repeal;
+        private System.Windows.Forms.Button btn_dele;
+        //private System.Windows.Forms.Button btn_serch;
+       // private System.Windows.Forms.Button btn_edit;
+       // private System.Windows.Forms.Button btn_seve;
+        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_view;
+       // private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_ifect_account;
+        private System.Windows.Forms.Button btn_Account_request;
+
+        // Existing controls from your designer:
+        private System.Windows.Forms.TabControl T_C;
+        private System.Windows.Forms.TabPage cbx_Acount_group;
+        private System.Windows.Forms.TabPage tabPage2;
+        private Button button3;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox cbx_parent;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txt_Note;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cbx_Account_Calss;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cbx_Rapport;
+        private System.Windows.Forms.DataGridView dgv_Account_curr;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox Cbx_Account_status;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbx_Account_group;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbx_Account_type;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_E_N;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_A_N;
+        private System.Windows.Forms.Label lb_pareant;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.TreeView tv_Account1;
+        private System.Windows.Forms.ImageList imageList1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -23,22 +71,37 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        /// Required method for Designer support - do not modify
+        /// Required method for Designer support – do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Account));
+
+            // Instantiate missing controls:
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox_Data = new System.Windows.Forms.GroupBox();
+            this.btn_repeal = new System.Windows.Forms.Button();
+            this.btn_dele = new System.Windows.Forms.Button();
+            this.btn_serch = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.btn_seve = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_view = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_ifect_account = new System.Windows.Forms.Button();
+            this.btn_Account_request = new System.Windows.Forms.Button();
+
+            // Instantiate existing controls:
             this.T_C = new System.Windows.Forms.TabControl();
             this.cbx_Acount_group = new System.Windows.Forms.TabPage();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.cbx_parent = new System.Windows.Forms.ComboBox();
-            this.btn_Account_request = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_Note = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.cbx_Account_Calss = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -60,13 +123,9 @@
             this.tv_Account1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox_Data.SuspendLayout();
-            this.T_C.SuspendLayout();
-            this.cbx_Acount_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Account_curr)).BeginInit();
-            this.SuspendLayout();
+            // Note: button3 is already used as a separate button on the tab page.
+            this.button3 = new System.Windows.Forms.Button();
+
             // 
             // groupBox1
             // 
@@ -75,35 +134,21 @@
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox1.Size = new System.Drawing.Size(1333, 74);
             // 
-            // txt_edit_user
-            // 
-            this.txt_edit_user.BackColor = System.Drawing.Color.White;
-            this.txt_edit_user.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_edit_user.ReadOnly = true;
-            // 
-            // txt_edit_date
-            // 
-            this.txt_edit_date.BackColor = System.Drawing.Color.White;
-            this.txt_edit_date.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_edit_date.ReadOnly = true;
-            // 
-            // txt_in_date
-            // 
-            this.txt_in_date.BackColor = System.Drawing.Color.White;
-            this.txt_in_date.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_in_date.ReadOnly = true;
-            // 
-            // txt_by_user
-            // 
-            this.txt_by_user.BackColor = System.Drawing.Color.White;
-            this.txt_by_user.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txt_by_user.ReadOnly = true;
-            // 
             // groupBox2
             // 
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.groupBox2.Size = new System.Drawing.Size(125, 543);
+            // 
+            // groupBox_Data
+            // 
+            this.groupBox_Data.Controls.Add(this.T_C);
+            this.groupBox_Data.Location = new System.Drawing.Point(125, 0);
+            this.groupBox_Data.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox_Data.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.groupBox_Data.Size = new System.Drawing.Size(1208, 543);
+            this.groupBox_Data.Enter += new System.EventHandler(this.groupBox_Data_Enter);
             // 
             // btn_repeal
             // 
@@ -149,18 +194,21 @@
             this.btn_add.Margin = new System.Windows.Forms.Padding(5);
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // groupBox_Data
-            // 
-            this.groupBox_Data.Controls.Add(this.T_C);
-            this.groupBox_Data.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.groupBox_Data.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.groupBox_Data.Size = new System.Drawing.Size(1208, 543);
-            this.groupBox_Data.Enter += new System.EventHandler(this.groupBox_Data_Enter);
-            // 
             // btn_ifect_account
             // 
             this.btn_ifect_account.Location = new System.Drawing.Point(4, 245);
             this.btn_ifect_account.Margin = new System.Windows.Forms.Padding(5);
+            // 
+            // btn_Account_request
+            // 
+            this.btn_Account_request.Location = new System.Drawing.Point(519, 42);
+            this.btn_Account_request.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Account_request.Name = "btn_Account_request";
+            this.btn_Account_request.Size = new System.Drawing.Size(85, 73);
+            this.btn_Account_request.TabIndex = 41;
+            this.btn_Account_request.Text = "الطلبيات";
+            this.btn_Account_request.UseVisualStyleBackColor = true;
+            this.btn_Account_request.Click += new System.EventHandler(this.btn_Account_request_Click);
             // 
             // T_C
             // 
@@ -236,17 +284,6 @@
             this.cbx_parent.TabIndex = 42;
             this.cbx_parent.SelectedIndexChanged += new System.EventHandler(this.cbx_parent_SelectedIndexChanged);
             this.cbx_parent.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cbx_parent_KeyUp);
-            // 
-            // btn_Account_request
-            // 
-            this.btn_Account_request.Location = new System.Drawing.Point(519, 42);
-            this.btn_Account_request.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Account_request.Name = "btn_Account_request";
-            this.btn_Account_request.Size = new System.Drawing.Size(85, 73);
-            this.btn_Account_request.TabIndex = 41;
-            this.btn_Account_request.Text = "الطلبيات";
-            this.btn_Account_request.UseVisualStyleBackColor = true;
-            this.btn_Account_request.Click += new System.EventHandler(this.btn_Account_request_Click);
             // 
             // button3
             // 
@@ -523,40 +560,8 @@
             this.cbx_Acount_group.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Account_curr)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl T_C;
-        private System.Windows.Forms.TabPage cbx_Acount_group;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cbx_Rapport;
-        private System.Windows.Forms.DataGridView dgv_Account_curr;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox Cbx_Account_status;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cbx_Account_group;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cbx_Account_type;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_E_N;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_A_N;
-        private System.Windows.Forms.Label lb_pareant;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.TreeView tv_Account1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_Note;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox cbx_parent;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cbx_Account_Calss;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button btn_Account_request;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

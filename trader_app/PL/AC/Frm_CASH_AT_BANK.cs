@@ -14,6 +14,13 @@ namespace trader_app.PL.AC
 {
     public partial class Frm_CASH_AT_BANK : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+
         BL.process_Class proc = new BL.process_Class();
         BL.AC_CASH_AT_BANK BANk = new BL.AC_CASH_AT_BANK();
         Account_Class Account = new Account_Class();

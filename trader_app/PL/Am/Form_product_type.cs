@@ -13,6 +13,14 @@ namespace trader_app.PL.Am
    
     public partial class Form_product_type : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_ifect_account = new Button();
+
         BL.AM_Product_type AM = new BL.AM_Product_type();
         DAL.Databas_Class DB = new DAL.Databas_Class();
         BL.User_class user = new BL.User_class();

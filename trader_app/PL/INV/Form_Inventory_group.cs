@@ -14,6 +14,17 @@ namespace trader_app.PL.INV
 
     public partial class Form_Inventory_group : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_exit = new Button();
+
         BL.INV_inventory_group inv_group = new BL.INV_inventory_group();
         DataTable dt;
         public Form_Inventory_group()
@@ -24,7 +35,7 @@ namespace trader_app.PL.INV
 
         private void Form_Inventory_group_Load(object sender, EventArgs e)
         {
-            Color c = new Color();
+           // Color c = new Color();
          //   this.groupBox1.Controls.OfType<TextBox>().All(tb => tb.ReadOnly = true);
             // this.groupBox1.Controls.OfType<TextBox>().All(tb => tb.BackColor=Color.White) ;
             foreach (Control control in this.Controls)

@@ -13,6 +13,15 @@ namespace trader_app.PL.INV
 {
     public partial class frm_Product : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_view = new Button();
+
         BL.Product_Class Product = new BL.Product_Class();
         DAL.Databas_Class DB = new DAL.Databas_Class();
         DAL.DataAccessLayer dal = new DAL.DataAccessLayer();

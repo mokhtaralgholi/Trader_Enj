@@ -32,9 +32,36 @@ namespace trader_app.PL.Am
             dataGridView1.Rows.Add(row);
         }
 
-        internal void ShowDialog()
+        public Form_Search(string sql)
+        {
+            this.sql = sql;
+        }
+
+        public Form_Search(string sql, Dictionary<int, string> list_C_N) : this(sql)
+        {
+        }
+
+        internal new void ShowDialog()
         {
             throw new NotImplementedException();
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Form_Search
+            // 
+            this.ClientSize = new System.Drawing.Size(288, 261);
+            this.Name = "Form_Search";
+            this.Load += new System.EventHandler(this.Form_Search_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void Form_Search_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

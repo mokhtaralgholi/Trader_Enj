@@ -16,6 +16,11 @@ namespace trader_app.PL.AC
 {
     public partial class frm_Account_LMT : PL.add_form
     {
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+
         Am.frm_Account_request_dgv frm = new Am.frm_Account_request_dgv();
         process_Class proc = new process_Class();
         Account_Class Account = new Account_Class();

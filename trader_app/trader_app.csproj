@@ -420,6 +420,9 @@
     <EmbeddedResource Include="PL\add_form.resx">
       <DependentUpon>add_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Am\Form_Search.resx">
+      <DependentUpon>Form_Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Am\frm_Account_request_dgv.resx">
       <DependentUpon>frm_Account_request_dgv.cs</DependentUpon>
     </EmbeddedResource>

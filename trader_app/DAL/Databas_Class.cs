@@ -49,20 +49,6 @@ namespace trader_app.DAL
             row["by_user"] = "user";
             return row;
 
-            try
-            {
-                return dal.FindDataSet("select * from " + Tabel_Nema + " where " + Column_Name + "='" + ID.Text + "'").Rows[0];
-
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("ارجاء التاكد من رقم السجل قد ");
-                ID.SelectAll();
-                ID.Focus();
-                return null;
-            }
-
         }
         public DataRow select_Row(string Tabel_Nema ,string Column_Name ,string ID)
         {

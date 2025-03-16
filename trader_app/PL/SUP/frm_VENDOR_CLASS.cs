@@ -13,6 +13,21 @@ namespace trader_app.PL.SUP
 {
     public partial class frm_VENDOR_CLASS : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_repeal = new Button();
+        Button btn_dele = new Button();
+        Button btn_exit = new Button();
+        Button btn_ifect_account = new Button();
+
         process_Class proc = new process_Class();
         SUP_vendor vendor = new SUP_vendor();
         DAL.DataAccessLayer dal;

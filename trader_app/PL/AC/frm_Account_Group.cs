@@ -12,6 +12,11 @@ namespace trader_app.PL.AC
 {
     public partial class frm_Account_Group : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+
         DAL.DataAccessLayer dal;
         DataTable dt;
         BL.Account_Class account =new BL.Account_Class();

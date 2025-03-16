@@ -13,6 +13,11 @@ namespace trader_app.PL.AC
 
     public partial class frm_Account_type :PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+
         BL.Account_Class account = new BL.Account_Class();
         BL.process_Class proc = new BL.process_Class();
         DataTable dt;

@@ -17,7 +17,7 @@ namespace trader_app
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new trader_app.PL.main());
+            Application.Run(new trader_app.PL.login());
         }
     }
 }

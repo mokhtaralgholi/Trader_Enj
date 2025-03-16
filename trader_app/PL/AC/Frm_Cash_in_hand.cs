@@ -13,7 +13,16 @@ namespace trader_app.PL.AC
 {
     public partial class Frm_Cash_in_hand : PL.add_form
     {
-       BL.process_Class proc = new BL.process_Class();
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+       // Button btn_add = new Button();
+       // Button btn_serch = new Button();
+
+        BL.process_Class proc = new BL.process_Class();
         BL.AC_Cash_in_hand cash = new BL.AC_Cash_in_hand();
         Account_Class Account = new Account_Class();
         DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();

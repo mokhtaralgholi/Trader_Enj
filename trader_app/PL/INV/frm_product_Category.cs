@@ -13,6 +13,17 @@ namespace trader_app.PL.INV
 {
     public partial class frm_product_Category : PL.add_form
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_edit = new Button();
+        Button btn_dele = new Button();
+        Button btn_add = new Button();
+        Button btn_seve = new Button();
+        Button btn_serch = new Button();
+        Button btn_view = new Button();
+
         BL.Product_Class Prodtct = new BL.Product_Class();
         DAL.Databas_Class db = new DAL.Databas_Class();
         public frm_product_Category()
@@ -196,6 +207,12 @@ namespace trader_app.PL.INV
             txt_id.ReadOnly = false;
             }
         }
+
+        private void frm_View(frm_product_Category frm_product_Category)
+        {
+            throw new NotImplementedException();
+        }
+
         private void search_data()
         {
           
@@ -441,6 +458,11 @@ namespace trader_app.PL.INV
            
                
             
+        }
+
+        private bool form_sev(frm_product_Category frm_product_Category)
+        {
+            throw new NotImplementedException();
         }
 
         private void txt_INV_Account_Leave(object sender, EventArgs e)

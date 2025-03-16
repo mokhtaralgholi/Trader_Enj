@@ -12,6 +12,22 @@ namespace trader_app.PL.INV
 {
     public partial class form_INV_sup_ordar : PL.order_frm
     {
+        TextBox txt_in_date = new TextBox();
+        TextBox txt_edit_date = new TextBox();
+        TextBox txt_edit_user = new TextBox();
+        TextBox txt_by_user = new TextBox();
+        Button btn_view = new Button();
+        Button btn_edit = new Button();
+        Button btn_seve = new Button();
+        Button btn_add = new Button();
+        Button btn_serch = new Button();
+        Button btn_repeal = new Button();
+        Button btn_dele = new Button();
+        Button btn_exit = new Button();
+        Button btn_ifect_account = new Button();
+
+
+
         DAL.DataAccessLayer dal;
         BL.process_Class proc = new BL.process_Class();
         DAL.Databas_Class DB = new DAL.Databas_Class();
@@ -28,6 +44,8 @@ namespace trader_app.PL.INV
             //txt_id.Focus();
         }
         AutoCompleteStringCollection Collection = new AutoCompleteStringCollection();
+        private string Statu;
+
         private void form_INV_sup_ordar_Load(object sender, EventArgs e)
         {
             txt_id.Text = "<جديد>";
@@ -245,6 +263,11 @@ namespace trader_app.PL.INV
 
         }
 
+        private bool form_sev(form_INV_sup_ordar form_INV_sup_ordar)
+        {
+            throw new NotImplementedException();
+        }
+
         private void btn_view_Click(object sender, EventArgs e)
         {
             view_data();
@@ -327,6 +350,12 @@ namespace trader_app.PL.INV
                 frm_View(this);
             }
         }
+
+        private void frm_View(form_INV_sup_ordar form_INV_sup_ordar)
+        {
+            throw new NotImplementedException();
+        }
+
         private void dgv_mov_line_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 1)
